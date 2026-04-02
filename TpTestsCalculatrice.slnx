@@ -1,3 +1,5 @@
 <Solution>
   <Project Path="TpTestsCalculatrice.App/TpTestsCalculatrice.App.csproj" />
+  <Project Path="TpTestsCalculatrice.Tests/TpTestsCalculatrice.Tests.csproj" />
 </Solution>
+
