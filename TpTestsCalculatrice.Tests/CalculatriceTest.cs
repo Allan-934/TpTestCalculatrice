@@ -10,9 +10,7 @@ public class CalculatriceTests
     public void Addition_Retourne5_Si2Plus3()
     {
         Calculatrice calc = new Calculatrice();
-
         int resultat = calc.Addition(2, 3);
-
         Assert.AreEqual(5, resultat);
     }
     // 1 test effectue ; 0 test echoue ; 1 test reussi  
@@ -49,7 +47,6 @@ public class CalculatriceTests
     public void Division_10Par0()
     {
         Calculatrice c5 = new Calculatrice();
-
         Assert.Throws<Exception>(() => c5.Division(10, 0));
     }
 
@@ -59,7 +56,6 @@ public class CalculatriceTests
     {
         Calculatrice c6 = new Calculatrice();
         bool r6 = c6.EstPair(4);
-
         Assert.IsTrue(r6);
         
     }
@@ -70,7 +66,6 @@ public class CalculatriceTests
     {
         Calculatrice c7 = new Calculatrice();
         bool r7 = c7.EstPair(5);
-
         Assert.IsFalse(r7);
     }
 
@@ -79,9 +74,7 @@ public class CalculatriceTests
     public void Addition_1()
     {
         Calculatrice a1 = new Calculatrice();
-
         int resultat = a1.Addition(0, 0);
-
         Assert.AreEqual(0, resultat);
     }
 
@@ -90,9 +83,7 @@ public class CalculatriceTests
     public void Addition_2()
     {
         Calculatrice a2 = new Calculatrice();
-
         int resultat = a2.Addition(-1, 1);
-
         Assert.AreEqual(0, resultat);
     }
 
@@ -101,9 +92,37 @@ public class CalculatriceTests
     public void Addition_3()
     {
         Calculatrice a2 = new Calculatrice();
-
         int resultat = a2.Addition(100, 200);
-
         Assert.AreEqual(300, resultat);
+    }
+
+    // Part 9.1 
+    [TestMethod]
+    public void Max_Test1()
+    {
+        Calculatrice m1 = new Calculatrice();
+        int resultat = m1.Max(3, 7);
+        Assert.AreEqual(7, resultat);
+        
+    }
+
+    // Part 9.2 
+    [TestMethod]
+    public void Max_Test2()
+    {
+        Calculatrice m2 = new Calculatrice();
+        int resultat = m2.Max(10, 2);
+        Assert.AreEqual(10, resultat);
+    }
+
+    // Part 9.3
+    [TestMethod]
+    public void Max_Test3()
+    {
+        Calculatrice m3 = new Calculatrice();
+        int resultat = m3.Max(5, 5);
+        Assert.AreEqual(5, resultat);
+
+        // commm
     }
 }
