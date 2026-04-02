@@ -34,4 +34,13 @@ public class CalculatriceTests
         int res3 = c3.Multiplication(4, 3);
         Assert.AreEqual(12, res3);
     }
+
+    //Part 5 Ex3 
+    [TestMethod]
+    public void Division_10Par2()
+    {
+        Calculatrice c4 = new Calculatrice ();
+        double res4 = c4.Division(10, 2); 
+        Assert.AreEqual(5, res4);
+    }
 }
