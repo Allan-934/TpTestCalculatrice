@@ -73,4 +73,37 @@ public class CalculatriceTests
 
         Assert.IsFalse(r7);
     }
+
+    // Part 8 Addition 1
+    [TestMethod]
+    public void Addition_1()
+    {
+        Calculatrice a1 = new Calculatrice();
+
+        int resultat = a1.Addition(0, 0);
+
+        Assert.AreEqual(0, resultat);
+    }
+
+    // Part 8 Addition 2
+    [TestMethod]
+    public void Addition_2()
+    {
+        Calculatrice a2 = new Calculatrice();
+
+        int resultat = a2.Addition(-1, 1);
+
+        Assert.AreEqual(0, resultat);
+    }
+
+    // Part 8 Addition 3
+    [TestMethod]
+    public void Addition_3()
+    {
+        Calculatrice a2 = new Calculatrice();
+
+        int resultat = a2.Addition(100, 200);
+
+        Assert.AreEqual(300, resultat);
+    }
 }
