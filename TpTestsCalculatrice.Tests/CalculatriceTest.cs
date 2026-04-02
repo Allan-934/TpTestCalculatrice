@@ -122,7 +122,5 @@ public class CalculatriceTests
         Calculatrice m3 = new Calculatrice();
         int resultat = m3.Max(5, 5);
         Assert.AreEqual(5, resultat);
-
-        // commm
     }
 }
